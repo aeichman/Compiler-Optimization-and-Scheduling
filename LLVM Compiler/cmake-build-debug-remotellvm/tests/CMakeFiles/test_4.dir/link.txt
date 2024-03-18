@@ -1,0 +1,1 @@
+/usr/bin/clang-17 -g -rdynamic CMakeFiles/test_4.dir/test_4.c.o test_4.bc.o -o test_4 

@@ -1,0 +1,1 @@
+/usr/bin/clang-17 -g -rdynamic CMakeFiles/flip.dir/flip.c.o flip.bc.o -o flip 

@@ -1,0 +1,1 @@
+/usr/bin/clang-17 -g -rdynamic CMakeFiles/syndrome_ecc.dir/syndrome_ecc.c.o syndrome_ecc.bc.o -o syndrome_ecc 

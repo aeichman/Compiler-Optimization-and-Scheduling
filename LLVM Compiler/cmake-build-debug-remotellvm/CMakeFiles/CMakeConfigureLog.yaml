@@ -1,0 +1,525 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.5.11-linuxkit - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang-17 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/3.27.4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++-17 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/3.27.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX"
+      binary: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_25ed0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_25ed0.dir/build.make CMakeFiles/cmTC_25ed0.dir/build
+        gmake[1]: Entering directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX'
+        Building C object CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang-17   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 17.0.2 (1~exp1ubuntu2.1)
+        Target: aarch64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-17/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -debugger-tuning=gdb -v -fcoverage-compilation-dir=/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX -resource-dir /usr/lib/llvm-17/lib/clang/17 -dependency-file CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -sys-header-deps -canonical-system-headers -internal-isystem /usr/lib/llvm-17/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcolor-diagnostics -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target aarch64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-17/lib/clang/17/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_25ed0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25ed0.dir/link.txt --verbose=1
+        /usr/bin/clang-17  -v -rdynamic CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -o cmTC_25ed0 
+        Ubuntu clang version 17.0.2 (1~exp1ubuntu2.1)
+        Target: aarch64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -pie -export-dynamic -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_25ed0 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/lib -L/usr/lib CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-17/lib/clang/17/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-17/lib/clang/17/include] ==> [/usr/lib/llvm-17/lib/clang/17/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-17/lib/clang/17/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld-17|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_25ed0/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_25ed0.dir/build.make CMakeFiles/cmTC_25ed0.dir/build]
+        ignore line: [gmake[1]: Entering directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX']
+        ignore line: [Building C object CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang-17   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 17.0.2 (1~exp1ubuntu2.1)]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-17/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -debugger-tuning=gdb -v -fcoverage-compilation-dir=/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX -resource-dir /usr/lib/llvm-17/lib/clang/17 -dependency-file CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -sys-header-deps -canonical-system-headers -internal-isystem /usr/lib/llvm-17/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-Dwe4kX -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcolor-diagnostics -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target aarch64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-17/lib/clang/17/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_25ed0]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25ed0.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang-17  -v -rdynamic CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -o cmTC_25ed0 ]
+        ignore line: [Ubuntu clang version 17.0.2 (1~exp1ubuntu2.1)]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -pie -export-dynamic -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_25ed0 /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/lib -L/usr/lib CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_25ed0] ==> ignore
+          arg [/lib/aarch64-linux-gnu/Scrt1.o] ==> obj [/lib/aarch64-linux-gnu/Scrt1.o]
+          arg [/lib/aarch64-linux-gnu/crti.o] ==> obj [/lib/aarch64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/aarch64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_25ed0.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o]
+          arg [/lib/aarch64-linux-gnu/crtn.o] ==> obj [/lib/aarch64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/aarch64-linux-gnu/Scrt1.o;/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o;/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/13;/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51"
+      binary: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6cd9a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6cd9a.dir/build.make CMakeFiles/cmTC_6cd9a.dir/build
+        gmake[1]: Entering directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51'
+        Building CXX object CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++-17   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 17.0.2 (1~exp1ubuntu2.1)
+        Target: aarch64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-17/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -debugger-tuning=gdb -v -fcoverage-compilation-dir=/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51 -resource-dir /usr/lib/llvm-17/lib/clang/17 -dependency-file CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -canonical-system-headers -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-17/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51 -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target aarch64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13
+         /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13
+         /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward
+         /usr/lib/llvm-17/lib/clang/17/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_6cd9a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cd9a.dir/link.txt --verbose=1
+        /usr/bin/clang++-17  -v -rdynamic CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6cd9a 
+        Ubuntu clang version 17.0.2 (1~exp1ubuntu2.1)
+        Target: aarch64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -pie -export-dynamic -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_6cd9a /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/lib -L/usr/lib CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13]
+          add: [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13]
+          add: [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward]
+          add: [/usr/lib/llvm-17/lib/clang/17/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13] ==> [/usr/include/aarch64-linux-gnu/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/llvm-17/lib/clang/17/include] ==> [/usr/lib/llvm-17/lib/clang/17/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/aarch64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/llvm-17/lib/clang/17/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld-17|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6cd9a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6cd9a.dir/build.make CMakeFiles/cmTC_6cd9a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++-17   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 17.0.2 (1~exp1ubuntu2.1)]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-17/bin/clang" -cc1 -triple aarch64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +neon -target-feature +v8a -target-abi aapcs -debugger-tuning=gdb -v -fcoverage-compilation-dir=/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51 -resource-dir /usr/lib/llvm-17/lib/clang/17 -dependency-file CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -canonical-system-headers -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-17/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include -internal-externc-isystem /usr/include/aarch64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-LNir51 -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -target-feature +outline-atomics -target-feature -fmv -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target aarch64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/aarch64-linux-gnu/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../include/c++/13/backward]
+        ignore line: [ /usr/lib/llvm-17/lib/clang/17/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_6cd9a]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cd9a.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++-17  -v -rdynamic CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6cd9a ]
+        ignore line: [Ubuntu clang version 17.0.2 (1~exp1ubuntu2.1)]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -pie -export-dynamic -EL -z relro --hash-style=gnu --build-id --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -o cmTC_6cd9a /lib/aarch64-linux-gnu/Scrt1.o /lib/aarch64-linux-gnu/crti.o /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/aarch64-linux-gnu/13 -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/lib -L/usr/lib CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o /lib/aarch64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6cd9a] ==> ignore
+          arg [/lib/aarch64-linux-gnu/Scrt1.o] ==> obj [/lib/aarch64-linux-gnu/Scrt1.o]
+          arg [/lib/aarch64-linux-gnu/crti.o] ==> obj [/lib/aarch64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/aarch64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_6cd9a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o]
+          arg [/lib/aarch64-linux-gnu/crtn.o] ==> obj [/lib/aarch64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/aarch64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/aarch64-linux-gnu/13] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/aarch64-linux-gnu/Scrt1.o;/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o;/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/13;/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/lib/llvm-17/cmake/FindFFI.cmake:44 (check_c_source_compiles)"
+      - "/usr/lib/llvm-17/cmake/LLVMConfig.cmake:267 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test HAVE_FFI_CALL"
+    directories:
+      source: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-U0UupX"
+      binary: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-U0UupX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-17/cmake"
+    buildResult:
+      variable: "HAVE_FFI_CALL"
+      cached: true
+      stdout: |
+        Change Dir: '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-U0UupX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_68dbb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_68dbb.dir/build.make CMakeFiles/cmTC_68dbb.dir/build
+        gmake[1]: Entering directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-U0UupX'
+        Building C object CMakeFiles/cmTC_68dbb.dir/src.c.o
+        /usr/bin/clang-17 -DHAVE_FFI_CALL  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_68dbb.dir/src.c.o -MF CMakeFiles/cmTC_68dbb.dir/src.c.o.d -o CMakeFiles/cmTC_68dbb.dir/src.c.o -c /tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-U0UupX/src.c
+        Linking C executable cmTC_68dbb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68dbb.dir/link.txt --verbose=1
+        /usr/bin/clang-17 -rdynamic CMakeFiles/cmTC_68dbb.dir/src.c.o -o cmTC_68dbb  /usr/lib/aarch64-linux-gnu/libffi.so 
+        gmake[1]: Leaving directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-U0UupX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/usr/lib/llvm-17/cmake/FindLibEdit.cmake:28 (check_include_file)"
+      - "/usr/lib/llvm-17/cmake/LLVMConfig.cmake:274 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Looking for histedit.h"
+    directories:
+      source: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-aIRZkw"
+      binary: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-aIRZkw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-17/cmake"
+    buildResult:
+      variable: "HAVE_HISTEDIT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-aIRZkw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3fbf9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3fbf9.dir/build.make CMakeFiles/cmTC_3fbf9.dir/build
+        gmake[1]: Entering directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-aIRZkw'
+        Building C object CMakeFiles/cmTC_3fbf9.dir/CheckIncludeFile.c.o
+        /usr/bin/clang-17   -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_3fbf9.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_3fbf9.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_3fbf9.dir/CheckIncludeFile.c.o -c /tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-aIRZkw/CheckIncludeFile.c
+        Linking C executable cmTC_3fbf9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fbf9.dir/link.txt --verbose=1
+        /usr/bin/clang-17 -rdynamic CMakeFiles/cmTC_3fbf9.dir/CheckIncludeFile.c.o -o cmTC_3fbf9 
+        gmake[1]: Leaving directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-aIRZkw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/lib/llvm-17/cmake/FindTerminfo.cmake:21 (check_c_source_compiles)"
+      - "/usr/lib/llvm-17/cmake/LLVMConfig.cmake:279 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test Terminfo_LINKABLE"
+    directories:
+      source: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-i08ek6"
+      binary: "/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-i08ek6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/llvm-17/cmake"
+    buildResult:
+      variable: "Terminfo_LINKABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-i08ek6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1a6ae/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1a6ae.dir/build.make CMakeFiles/cmTC_1a6ae.dir/build
+        gmake[1]: Entering directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-i08ek6'
+        Building C object CMakeFiles/cmTC_1a6ae.dir/src.c.o
+        /usr/bin/clang-17 -DTerminfo_LINKABLE  -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_1a6ae.dir/src.c.o -MF CMakeFiles/cmTC_1a6ae.dir/src.c.o.d -o CMakeFiles/cmTC_1a6ae.dir/src.c.o -c /tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-i08ek6/src.c
+        Linking C executable cmTC_1a6ae
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a6ae.dir/link.txt --verbose=1
+        /usr/bin/clang-17 -rdynamic CMakeFiles/cmTC_1a6ae.dir/src.c.o -o cmTC_1a6ae  /usr/lib/aarch64-linux-gnu/libtinfo.so 
+        gmake[1]: Leaving directory '/tmp/tmp.dORsRfq6MF/cmake-build-debug-remotellvm/CMakeFiles/CMakeScratch/TryCompile-i08ek6'
+        
+      exitCode: 0
+...
